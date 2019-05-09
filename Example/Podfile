@@ -1,0 +1,33 @@
+def shared_pods
+  pod 'MultiPlatformPod', :path => '../'
+end
+
+target 'MultiPlatformPod_Example_IOS' do
+  use_frameworks!
+  platform :ios, '12.2'
+  shared_pods
+  target 'MultiPlatformPod_Example_IOSTests' do
+    inherit! :search_paths
+  end
+end
+
+#this cannot be nested, else it causes dylib link errors
+target 'MultiPlatformPod_Example_IOSUITests' do
+  platform :ios, '12.2'
+  shared_pods
+end
+
+target 'MultiPlatformPod_Example_OSX' do
+  use_frameworks!
+  platform :osx, '10.14'
+  shared_pods
+  target 'MultiPlatformPod_Example_OSXTests' do
+    inherit! :search_paths
+  end
+end
+
+#this cannot be nested, else it causes dylib link errors
+target 'MultiPlatformPod_Example_OSXUITests' do
+  platform :osx, '10.14'
+  shared_pods
+end

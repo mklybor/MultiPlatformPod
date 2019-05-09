@@ -1,0 +1,6 @@
+module Pods_MultiPlatformPod_Example_OSXUITests {
+  umbrella header "Pods-MultiPlatformPod_Example_OSXUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+module Pods_MultiPlatformPod_Example_IOSUITests {
+  umbrella header "Pods-MultiPlatformPod_Example_IOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

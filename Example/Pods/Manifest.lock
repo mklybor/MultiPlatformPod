@@ -1,0 +1,16 @@
+PODS:
+  - MultiPlatformPod (0.1.0)
+
+DEPENDENCIES:
+  - MultiPlatformPod (from `../`)
+
+EXTERNAL SOURCES:
+  MultiPlatformPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MultiPlatformPod: 09cb54e18f60a94d7d5b4619042eaa56f47381a4
+
+PODFILE CHECKSUM: 82c46d3924e9c0f643dac9b68e2444db4e2078f3
+
+COCOAPODS: 1.6.0

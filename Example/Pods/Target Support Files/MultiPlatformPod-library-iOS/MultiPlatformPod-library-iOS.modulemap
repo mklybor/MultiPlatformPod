@@ -1,0 +1,7 @@
+module MultiPlatformPod {
+  umbrella header "MultiPlatformPod-library-iOS-umbrella.h"
+  exclude header "MultiPlatformPod-library-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

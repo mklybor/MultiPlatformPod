@@ -1,0 +1,40 @@
+{
+  "name": "MultiPlatformPod",
+  "version": "0.1.0",
+  "summary": "A short description of MultiPlatformPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mklybor/MultiPlatformPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mklybor": "michael_r_klybor@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mklybor/MultiPlatformPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.2",
+    "osx": "10.14"
+  },
+  "swift_version": "4.2",
+  "ios": {
+    "source_files": [
+      "MultiPlatformPod/Classes/Common/*.{swift,m,h}",
+      "MultiPlatformPod/Classes/IOS/*.{swift,m,h}"
+    ]
+  },
+  "osx": {
+    "source_files": [
+      "MultiPlatformPod/Classes/Common/*.{swift,m,h}",
+      "MultiPlatformPod/Classes/OSX/*.{swift,m,h}"
+    ]
+  },
+  "resource_bundles": {
+    "MultiPlatformPod": [
+      "MultiPlatformPod/Assets/*.png"
+    ]
+  }
+}
